@@ -1,0 +1,18 @@
+//customers
+
+
+//Import sass files
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+//create our own custom map of theme colors
+$custom-theme-colors: (
+    "darkpurple" : #331832,
+    "lightpurple":#9792E3,
+    "lightblue": #52D1DC
+);
+
+//merge custom color map with OG color theme map
+$theme-colors: map-merge($custom-theme-colors,$theme-colors);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
